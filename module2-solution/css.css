@@ -1,0 +1,100 @@
+.header, .header * {
+    width: 100%;
+    text-align:center;
+}
+
+body {
+    margin: 0;
+}
+
+body > div > div {
+    margin-top: 15px;
+    margin-bottom: 15px;;
+}
+
+div p {
+    text-align: left;
+    vertical-align: top;
+}
+
+div 
+{
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main 
+{
+    min-width: 95%;
+}
+
+.main > div 
+{        
+    padding: 2.5%;
+    margin: 2%;
+}
+
+.main > div 
+{
+    padding: 2.5%;
+    border: 1px black solid;
+    background: grey;
+}
+
+@media only screen and (min-width: 992px)
+{
+    .one, .two, .three 
+    {
+        min-width: 20%;
+        max-width: 25%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
+    .one, .two 
+    {
+        width: 45%;
+    }
+
+    .three 
+    {
+        clear:left;
+    }
+}
+
+@media only screen and (max-width: 767px) 
+{ 
+}
+
+.card-title 
+{
+    position: absolute;
+    border: black 1px solid;
+    border-top: 0px;
+    border-right: 0px;
+    right: 0;
+    top: 0;
+}
+
+p {
+    padding: 0px 15px 0px 15px;
+    margin: 5px;
+}
+
+.card-title ~ div {
+    padding-top: 15px;
+}
+
+.one .card-title {
+    background-color: red;
+}
+
+.two .card-title {
+    background-color: aqua;
+}
+
+.three .card-title {
+    background-color: greenyellow;
+}
